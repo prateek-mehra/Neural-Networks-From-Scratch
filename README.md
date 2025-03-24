@@ -71,6 +71,7 @@ python Phase-1-Basics/01-Perceptron.py
 
 ## 📜 **Author**
 👤 **[Prateek Mehra]** - Taking baby steps in tinkering with data science
+
 🔗 [LinkedIn Profile](https://www.linkedin.com/in/1prateekmehra1/)  
 🔗 [GitHub Profile](https://github.com/prateek-mehra)  
 
