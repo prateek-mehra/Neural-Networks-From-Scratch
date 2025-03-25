@@ -30,8 +30,8 @@ class Perceptron:
                 y_predicted = self.activation_fn(linear_output)
 
                 update = self.learning_rate * (y[idx] - y_predicted)
-                self.weights = update * x_i
-                self.bias = update
+                self.weights += update * x_i
+                self.bias += update
     
     def predict(self, X):
 
