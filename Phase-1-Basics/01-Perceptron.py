@@ -1,7 +1,7 @@
 import numpy as np
 
 def unit_step_fn(x):
-    return np.where(x > 0, 1, 0)
+    return np.where(x >= 0, 1, 0)
 
 class Perceptron:
 
@@ -29,9 +29,9 @@ class Perceptron:
                 linear_output = np.dot(x_i, self.weights) + self.bias
                 y_predicted = self.activation_fn(linear_output)
 
-                update = self.learning_rate * (y[idx] - y_predicted)
-                self.weights = update * x_i
-                self.bias = update
+                update = self.learning_rate * (y_[idx] - y_predicted)
+                self.weights += update * x_i
+                self.bias += update
     
     def predict(self, X):
 
